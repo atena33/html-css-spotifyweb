@@ -4,11 +4,26 @@
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+  color: white;
+  opacity: 0.8;
+}
+
+a :hover {
+  opacity:none;
+}
+ ul li {
+   list-style: none;
+ }
+
+
 /* Qui iniziano le regole della macro-struttura */
 
 body {
   display:flex;
-
+  font-family: 'Montserrat', sans-serif;
+  color: white;
 }
 
 #laterale {
@@ -20,6 +35,8 @@ body {
   position: fixed;
   top:0;
   bottom:0;
+  background-color: black;
+  align-items: center;
 }
 
 #principale {
@@ -36,4 +53,62 @@ body {
   height: 15vh;
   width: 100%;
   background-color: blue;
+}
+
+/* Qui iniziano le regole della prima sezione */
+
+#logo {
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#navbar img {
+  width: 25px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#navbar {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+#navbar li a{
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+
+}
+#navbar h6 {
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+/* Qui inizia la parte con la playlist */
+
+.playlist {
+  max-height: 250px;
+  border: solid 2px white;
+
+}
+
+.playlist h4 {
+  padding-bottom: 20px;
+}
+
+#plus {
+  padding: 5px 10px;
+  font-size: 30px;
+  background-color: white;
+  color: black;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+.playlist ul li {
+  padding-bottom: 15px;
+  z-index: 0;
 }
