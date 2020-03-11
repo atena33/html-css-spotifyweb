@@ -6,12 +6,11 @@
 
 a {
   text-decoration: none;
-  color: white;
-  opacity: 0.8;
+  color: gray;
 }
 
 a :hover {
-  opacity:none;
+  color: white;
 }
  ul li {
    list-style: none;
@@ -89,11 +88,6 @@ body {
 
 /* Qui inizia la parte con la playlist */
 
-.playlist {
-  max-height: 250px;
-  border: solid 2px white;
-
-}
 
 .playlist h4 {
   padding-bottom: 20px;
@@ -102,13 +96,61 @@ body {
 #plus {
   padding: 5px 10px;
   font-size: 30px;
-  background-color: white;
+  background-color: gray;
   color: black;
   margin-right: 10px;
   margin-bottom: 30px;
 }
-
+.playlist {
+  overflow-y: scroll;
+  max-height: 210px;
+  width: 110%;
+}
 .playlist ul li {
+  padding-top: 15px;
+  font-size: 13px;
+}
+
+.app {
+  margin-top: 15px;
+  font-size: 13px;
   padding-bottom: 15px;
-  z-index: 0;
+  display: flex;
+  align-items: center;
+}
+
+.account {
+  display: flex;
+  padding-top: 30px;
+  width: 90%;
+  border-top: solid 2px gray;
+  align-items: center;
+}
+
+.account img {
+  max-height: 30px;
+  width: auto;
+  padding-right: 10px;
+}
+
+/* .account img, .account h6 {
+  position: relative;
+  right: -30px;
+} */
+
+@media screen and (max-width:768px){
+  #navbar h6, .playlist, .app p, .account h6{
+    display: none;
+  }
+
+  .app {
+    position: fixed;
+    bottom: 150px;
+  }
+  .account {
+    position: fixed;
+    bottom:100px;
+    border-top: none;
+  }
+  }
 }
