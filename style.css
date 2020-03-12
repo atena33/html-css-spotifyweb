@@ -24,15 +24,13 @@ ul li :hover {
 
 body {
   display:flex;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', 'sans-serif';
   color: white;
 }
 
 #laterale {
   height: 85vh;
   width:20%;
-
-  border: solid 2px;
   position: fixed;
   top:0;
   bottom:0;
@@ -54,10 +52,9 @@ body {
   position:fixed;
   bottom: 0;
   left: 0;
-  border: solid 2px;
   height: 15vh;
   width: 100%;
-  background-color: blue;
+  background-color: #282828;
 }
 
 /* Qui iniziano le regole della prima sezione */
@@ -268,9 +265,14 @@ main h2 {
   font-size: 50px;
   position: absolute;
   top: 0px;
-  padding: 46px 50px;
+  padding: 50px 50px;
   background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
 
+.card:hover .over {
+  display: block;
+  cursor: pointer;
 }
 
 .over :hover {
@@ -306,4 +308,120 @@ main h2 {
   padding: 46px 50px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 100%;
+  display: none;
+
+}
+
+.card:hover .cerchio {
+  display:block;
+  cursor:pointer;
+}
+
+/* Qui iniziano le regole del footer */
+
+#finale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  border: solid 2px;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.player2 {
+  width: 40%;
+  height: 100%;
+  border: solid 2px;
+}
+
+.player img {
+  height: 50px;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.player ul {
+  margin-right: 50px;
+}
+
+#sinister {
+  color:white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+#brano {
+  font-size: 12px;
+}
+
+.player a {
+  padding-right: 10px;
+}
+
+.player2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.icone li a{
+  padding-right: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+#grande {
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+#barretta {
+  padding: 2px 200px;
+  border-radius: 5px;
+  background-color: gray;
+  align-self: center;
+  margin: 0 10px;
+  position: relative;
+}
+
+#layover {
+  background-color: #F5F5F5;
+  height: 4px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+#layover:hover{
+  background: green;
+  cursor: pointer;
+}
+
+.cerchietto {
+  padding: 6px;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 80px;
+  top: -3px;
+  display: none;
+}
+
+#barretta:hover .cerchietto {
+
+  display: block;
 }
