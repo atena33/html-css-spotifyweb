@@ -103,6 +103,7 @@ body {
   left:-10%;
 }
 
+
 /* Qui inizia la parte con la playlist */
 
 
@@ -341,10 +342,17 @@ main h2 {
   width: auto;
   padding-left: 10px;
   padding-right: 10px;
+  flex-shrink: 100;
 }
 
 .player ul {
   margin-right: 50px;
+}
+
+@media screen and (max-width: 970px){
+  .player ul {
+    margin-right: 5px;
+  }
 }
 
 #sinister {
@@ -381,19 +389,28 @@ main h2 {
   font-size: 16px;
 }
 
+@media screen and (max-width:768px) {
+  .icone li  {
+    font-size: 12px;
+    padding-right: 3px;
+  }
+}
+
 #grande {
   font-size: 25px;
   padding-right: 20px;
 }
 
 .barretta {
-  padding: 2px 200px;
   border-radius: 5px;
   background-color: gray;
   align-self: center;
-  flex-shrink: 10;
+  flex-shrink: 100;
   margin: 0 10px;
   position: relative;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 300px;
 }
 
 .layover {
@@ -425,6 +442,12 @@ main h2 {
 }
 
 .volume {
-  padding: 2px 80px;
-  flex-shrink: 4;
+  padding: 2px 70px;
+  width: 70px;
+}
+
+@media screen and (max-width:768px) {
+  .volume {
+    padding: 2px 0px;
+  }
 }
