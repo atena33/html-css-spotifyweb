@@ -26,34 +26,168 @@ body {
   font-family: 'Montserrat', 'sans-serif';
   color: white;
 }
-.macro {
+
+#macro {
   display:flex;
 }
-#laterale {
-  height: 90vh;
-  width:200px;
-  background-color: black;
+
+section {
+  height: calc(100vh - 100px);
+  background-color: yellow;
+  width: 100%;
+  z-index: 0;
 }
 
-@media screen and (max-width: 780px) {
-  #laterale {
-    width: 80px;
-  }
+footer {
+  background-color: red;
+  height: 100px;
+  width: 100%;
 }
-.container {
+
+#lato {
+  background: black;
+  width: 200px;
   display: flex;
   flex-direction: column;
-}
-#principale {
-  width: 100%;
-  height: 90vh;
-  background: yellow;
+  overflow: hidden;
 }
 
-#finale {
-  height: 10vh;
-  width: 100%;
-  background-color: red;
+/* Qui iniziano le regole della barra laterale */
+#logo {
+  width: 150px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-/* Qui iniziano le regole della prima sezione */
+#logo-piccolo {
+  width: 30px;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+#navbar img {
+  width: 15px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+}
+#navbar {
+  display: flex;
+
+}
+
+#navbar li a{
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+
+}
+#navbar h6 {
+  padding-left: 15px;
+  font-size: 12px;
+}
+
+/* Qui inizia la parte con la playlist */
+
+
+.playlist h4 {
+  padding-bottom: 20px;
+}
+#più :hover{
+  background-color: white;
+}
+.playlist :hover {
+  color: white;
+}
+#plus {
+  padding: 5px 10px;
+  font-size: 20px;
+  background-color: gray;
+  color: black;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+
+.playlist ul li {
+  padding-top: 10px;
+  font-size: 12px;
+}
+
+.playlist {
+  margin-left: 10px;
+}
+
+.app {
+  margin-top: 50px;
+  font-size: 13px;
+}
+
+.account {
+  padding-top: 20px;
+  width: 90%;
+  border-top: solid 2px gray;
+
+}
+.account h6 {
+  padding-left: 10px;
+}
+.account img {
+  max-height: 30px;
+  width: auto;
+  border-radius: 100%;
+  background-color: gray;
+}
+ .row {
+   display: flex;
+   flex-direction: row;
+   margin-left: 10px;
+   align-items: center;
+   padding-bottom: 10px;
+}
+ .fas {
+  padding-right: 10px;
+}
+@media screen and (max-width:768px){
+  #navbar h6, .playlist, .app p, .account h6, #logo{
+    display: none;
+  }
+
+  #lato {
+    width: 80px;
+  }
+
+  #navbar img {
+    width: 30px;
+    height: auto;
+  }
+
+  #logo-piccolo{
+    width: 30px;
+    height: auto;
+    margin-left: 10px;
+  }
+
+  .row {
+    align-items: center;
+    margin-left: 10px;
+  }
+
+  .account {
+    border: none;
+  }
+
+  .app {
+    margin-top: 80px;
+  }
+
+}
+
+@media screen and (min-width:769px) {
+  #logo-piccolo {
+    display:none;
+  }
+}
