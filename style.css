@@ -33,7 +33,7 @@ body {
 
 section {
   height: calc(100vh - 100px);
-  background-color: yellow;
+  background-color: #141922;
   width: 100%;
   z-index: 0;
 }
@@ -190,4 +190,139 @@ footer {
   #logo-piccolo {
     display:none;
   }
+}
+
+/* Qui inizia la section principale */
+
+#corpo {
+  padding-top: 110px;
+  overflow-y: scroll;
+}
+.upgrade {position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  height: 90px;
+  width: calc(100% - 150px);
+  background-color: rgba(0, 0, 0, 0.4);
+  justify-content: flex-end;
+  width: calc(100%-200px);
+}
+
+.upgrade h2 {
+  padding: 10px 20px;
+  border: solid 2px;
+  border-radius: 50px;
+  margin: 20px;
+  font-size: 12px;
+  width: 200px;
+}
+@media screen and (max-width:1200px) {
+  .barra li a {
+    font-size: 20px;
+  }
+}
+/* Qui inizia la parte con le cards */
+
+.barra li {
+  padding-top: 10px;
+  font-size: 13px;
+  padding-right: 10px;
+}
+
+.barra {
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 0;
+}
+
+h2 {
+  padding: 30px;
+  margin: 0;
+}
+
+.cards {
+ display: flex;
+ align-items: flex-start;
+ flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 10px;
+  padding-bottom: 30px;
+  flex-basis: calc(100% / 6);
+  position: relative;
+  text-align: center;
+}
+
+.card img {
+  height: 150px;
+}
+
+@media screen and (max-width:768px) {
+  .card img {
+    height: 200px;
+  }
+  .upgrade {
+    width: calc(100% - 70px);
+  }
+}
+
+.over {
+  font-size: 50px;
+  position: absolute;
+  top: 0px;
+  padding: 50px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+
+.card:hover .over {
+  display: block;
+  cursor: pointer;
+}
+
+.over :hover {
+  display: block;
+}
+
+.titolo {
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.sottotitolo {
+  padding-bottom: 30px;
+}
+
+.sub {
+  color: gray;
+  padding-left: 20px;
+  padding-bottom: 30px;
+}
+
+.radius {
+  border-radius: 100%;
+}
+
+.cerchio {
+  font-size: 50px;
+  position: absolute;
+  top: 0px;
+  padding: 46px 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 100%;
+  display: none;
+
+}
+
+.card:hover .cerchio {
+  display:block;
+  cursor:pointer;
 }
