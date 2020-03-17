@@ -39,7 +39,7 @@ section {
 }
 
 footer {
-  background-color: red;
+  background-color: #282828;
   height: 100px;
   width: 100%;
 }
@@ -264,7 +264,7 @@ h2 {
 
 @media screen and (max-width:768px) {
   .card img {
-    height: 200px;
+    margin-right: 30px;
   }
   .upgrade {
     width: calc(100% - 70px);
@@ -317,7 +317,7 @@ h2 {
   top: 0px;
   padding: 46px 50px;
   background-color: rgba(0, 0, 0, 0.5);
-  border-radius: 100%;
+  border-radius: 50%;
   display: none;
 
 }
@@ -325,4 +325,142 @@ h2 {
 .card:hover .cerchio {
   display:block;
   cursor:pointer;
+}
+
+/* Qui iniziano le regole del footer */
+
+#finale {
+  display: flex;
+  justify-content: space-between;
+}
+
+.player {
+  height: 100%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+}
+
+.player2 {
+  width: 40%;
+  height: 100%;
+}
+
+.player img {
+  height: 50px;
+  width: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  flex-shrink: 100;
+}
+
+.player ul {
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 970px){
+  .player ul {
+    margin-right: 5px;
+  }
+}
+
+#sinister {
+  color:white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+
+#brano {
+  font-size: 12px;
+}
+
+.player a {
+  padding-right: 10px;
+}
+
+.player2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.icone {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 5px;
+  padding-bottom: 10px;
+}
+
+.icone li a{
+  padding-right: 10px;
+  color: white;
+  font-size: 16px;
+}
+
+@media screen and (max-width:768px) {
+  .icone li  {
+    font-size: 12px;
+    padding-right: 3px;
+  }
+}
+
+#grande {
+  font-size: 25px;
+  padding-right: 20px;
+}
+
+.barretta {
+  border-radius: 5px;
+  background-color: gray;
+  align-self: center;
+  flex-shrink: 100;
+  margin: 0 10px;
+  position: relative;
+  padding-top: 2px;
+  padding-bottom: 2px;
+  width: 300px;
+}
+
+.layover {
+  background-color: #F5F5F5;
+  height: 4px;
+  width: 80px;
+  position: absolute;
+  left: 0;
+  top:0;
+}
+
+.layover:hover{
+  background: green;
+  cursor: pointer;
+}
+
+.cerchietto {
+  padding: 6px;
+  background: white;
+  border-radius: 100%;
+  position: absolute;
+  left: 80px;
+  top: -3px;
+  display: none;
+}
+
+.barretta:hover .cerchietto {
+  display: block;
+}
+
+.volume {
+  width: 150px;
+  padding: 2px 70px;
+}
+
+@media screen and (max-width:768px) {
+  .player ul li i {
+    font-size: 10px;
+  }
+
+  .volume {
+    width: 50%;
+  }
 }
